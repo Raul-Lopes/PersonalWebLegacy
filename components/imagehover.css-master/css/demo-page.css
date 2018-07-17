@@ -1,0 +1,57 @@
+/*
+ * ImageHover.css - Demo Page
+ * Author: Ciarán Walsh
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+body {
+  margin: 0;
+  padding: 40px 0 0 0;
+  font-family: sans-serif;
+  color: #333;
+  line-height: 140%;
+  background-color: #F5F3F5;
+  border-top: 10px solid #01579b;
+}
+hr {
+  margin-top: 2em;
+  background-color: #ddd;
+  border: none;
+  height: 1px;
+}
+img {
+  border: none;
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 0 15px;
+}
+a {
+  color: #2098D1;
+  text-decoration: none;
+}
+.nav:hover {
+  color: #207AD1;
+}
+h1 {
+  text-align: left;
+  font-size: 2em;
+}
+h2 {
+  margin-top: 0;
+  color: #888;
+  line-height: 1.2em;
+}
+h3 {
+  margin: 0;
+  color: #888;
+  margin: 0 0 15px;
+}
+@media only screen and (min-width: 360px) {
+  h1 {
+    font-size: 3em;
+  }
+}
