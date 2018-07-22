@@ -60,12 +60,20 @@ html {
   margin-left: -15px;
 }
 
-.col-12, .col-sm-6, .col-sm-12, .col-md-4, .col-md-6, .col-md-8 {
+.col-12, .col, .col-sm-6, .col-sm-12, .col-md-4, .col-md-6, .col-md-8 {
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
 }
 
 .col-12 {
