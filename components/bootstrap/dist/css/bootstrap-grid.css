@@ -113,18 +113,8 @@ html {
   }
 }
 
-.d-none {
-  display: none !important;
-}
-
 .d-block {
   display: block !important;
-}
-
-@media (min-width: 768px) {
-  .d-md-block {
-    display: block !important;
-  }
 }
 
 .flex-column {

@@ -187,11 +187,6 @@ h5 {
   font-size: 1.25rem;
 }
 
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -663,18 +658,8 @@ a.bg-light:hover, a.bg-light:focus {
   border-radius: 50% !important;
 }
 
-.d-none {
-  display: none !important;
-}
-
 .d-block {
   display: block !important;
-}
-
-@media (min-width: 768px) {
-  .d-md-block {
-    display: block !important;
-  }
 }
 
 .flex-column {
@@ -732,8 +717,8 @@ a.bg-light:hover, a.bg-light:focus {
   margin-bottom: 3rem !important;
 }
 
-.p-3 {
-  padding: 1rem !important;
+.p-1 {
+  padding: 0.25rem !important;
 }
 
 .text-center {
