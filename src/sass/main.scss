@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+@import '_tmp/_mixins.sass';
+@import '_geral';
+//@import '_partials/_home';
+@import '_partials/_header-nav';
+@import '_partials/_header-animado';
+@import '_partials/_card-portfolio';
+@import '_partials/_card-skill';
+@import '_partials/_rodape';
+
+@import 'D:/Projects/PersonalWebPage/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';   
+
+@import 'D:/Projects/PersonalWebPage/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+         
+@import 'D:/Projects/PersonalWebPage/node_modules/breakpoint-sass/stylesheets/breakpoint';
+ 
+//@import ../node_modules/imagehover.css/scss/imagehover
+
+//@import templates/portfolio
+
+//other project
+@import '_tmp/_botao';
+@import '_tmp/_portfolio';
+@import '_tmp/_textos';
+@import '_tmp/_career';
+@import '_tmp/_contact';
+@import '_tmp/_moreAbout';
+@import '_tmp/_skill';
+@import '_tmp/_cabecalho';

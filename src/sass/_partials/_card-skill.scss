@@ -1,0 +1,85 @@
+.card-skills{
+    
+    @mixin sombra($dir, $angle, $distance){
+        content: '';
+        z-index: -1;
+        position: absolute;
+        background: #777;
+        width: 50%;
+        height: 20px;
+        //bottom: 12px;
+        box-shadow: 0 15px 10px #777;
+        @if $dir == 'esq'{
+            transform: rotate($angle * -1);
+            left: $distance;            
+        } @else {
+            transform: rotate($angle);
+            right: $distance;
+        }
+    } //function end
+    
+    /*&:before{ //pass moause
+        @include sombra('esq', 3deg, 5px);
+    }
+    &:after{ //moause
+        @include sombra('dir', 3deg, 5px);
+    }*/
+        
+    padding: 0; 
+    border-radius: 0;
+    border: 0px solid transparent;
+    position: relative;
+    size: cover;
+    float:left;
+    
+    &__imagem{
+        
+        width: 250px; //largura
+        height: 250px; //tamanho
+        overflow: hidden;
+        border: 1px solid  silver;
+        margin: 0px 0px 10px 0px;
+        breakpoint($tablet){
+            width: 250px; //largura
+            height: 250px; //tamanho
+        }
+        img{
+            max-width: 100%; //mexe na altura da imagem
+            opacity: .5; 
+            transition: opacity .2s linear, transform 1s ease-in, filter.5s linear; //tempo do efeito 2s
+            filter: grayscale(1);
+        }
+    }
+    
+    &:hover{ //maouse effect
+        img{
+            opacity: 1;
+            transform: scale(1.15) rotate(-5deg);
+            filter: grayscale(0);
+        }
+        
+        /*.card-portfolio__btn{
+            background: lighten($main-color, 30);
+            color: #fff;
+            
+            &:hover{
+                background: saturate($main-color, 30);
+            }
+        }*/
+    }
+    
+    /*&__btn{
+        background: transparent;
+        color: $main-color;
+        display: block;
+        border: none;
+        border-radius: 0;
+        width: 100px;
+        transition: all .3s linear;
+        margin-left: auto;
+        position: relative;
+        top: 1px;
+        
+    }*/    
+    
+}

@@ -1,0 +1,77 @@
+
+.itens
+    +flexbox
+    align-items: center
+    justify-content: space-around
+    margin: 50px 0
+    text-align: center
+    position: relative
+    background-color: $branco
+
+    +make-sm-column(10) //nao mexe mais aqui
+    +make-sm-column-offset(1) //not change more here
+
+    +breakpoint($tablet)
+        //display: block
+
+    .foto
+        //+order(3)                 //top, right, bottom, left
+        +breakpoint($tablet)
+            //margin: 0px 130px 0px 130px
+            +breakpoint($celular)
+                //margin: 0px 130px 0px 130px
+
+    [class^="icone-"]
+        
+        width: 90px
+        height: 90px
+        background-color: $main_color_bg
+        +border-radius(120px)
+        text-align: center
+        line-height: 85px
+        color: $branco
+        +font-size(55px)
+
+        +breakpoint($tablet)
+            //display: inline-block
+            width: 75px //75
+            height: 75px //75
+            //line-height: 75px //75
+            +font-size(40px) //50
+            margin: 0 3px
+
+            +breakpoint($celular)
+                display: inline-block
+                width: 45px
+                height: 45px
+                line-height: 45px
+                +font-size(25px)
+                margin: 0 2px
+
+        &.icone-lapis
+            //+order(1)
+
+        &.icone-codigo
+            //+order(2)
+
+        &.icone-coracao
+            //+order(4)
+
+        &.icone-compartilhar
+            //+order(5)
+                            
+.merda
+
+    +flexbox
+    align-items: justify
+    justify-content: space-around
+    margin: 50px 0
+    text-align: justify
+    position: relative
+    background-color: $branco
+
+    //+make-sm-column(12) //10
+    //+make-sm-column-offset(0)
+
+    +breakpoint($tablet)
+    display: block

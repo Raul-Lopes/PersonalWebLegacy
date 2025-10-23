@@ -1,0 +1,59 @@
+.cabecalhoHome
+    +make-sm-column(12)
+
+.__lead
+    p
+        +font-size(80px)
+        font-size: 80px
+        +breakpoint($celular)
+            +font-size(18px)  
+            font-size: 18px
+        
+.__myCarousel
+    
+    //+make-sm-column(12)
+    width: 100%
+    max-height: 300px !important
+    margin: auto
+    
+    img
+        width: 100%
+        margin: auto
+        height: 250px !important
+   
+.__myCarouselMoreAbout
+    width: 100%
+    max-height: 300px !important
+    
+    img
+        width: 100%
+        margin: auto
+        height: 300px !important
+        
+.cabecalho    
+    
+    min-height: 335px
+    margin: 0 0 25px
+    position: relative
+    color: $branco //of header
+    background:
+        image: url('../imagens/f.jpg')
+        position: top center
+        repeat: no-repeat
+        //attachment: fixed
+        color: $preto //of imagem
+        size: cover
+        
+    h1
+        margin-top: 100px !important
+        text-align: center
+    h2
+        text-align: center
+        
+    p
+        text-align: center
+        +font-size(30px)
+
+        +breakpoint($celular)
+            +font-size(18px)  
+            font-size: 18px

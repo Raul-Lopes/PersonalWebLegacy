@@ -1,0 +1,36 @@
+{
+  "name": "raullopes",
+  "version": "0.0.1",
+  "description": "Raul Lopes Personal Web Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo startando",
+    "prestart": "echo prestart",
+    "poststart": "echo post start",
+    "postinstall": "mkdirp src/components/bootstrap/src/components/font-awesome/ && cp -r node_modules/bootstrap/dist src/components/bootstrap/ && cp -r node_modules/font-awesome/css src/components/font-awesome/ && cp -r node_modules/font-awesome/fonts src/components/font-awesome/",
+    "gulp": "gulp"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
+  "author": "Raul Lopes",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^1.1.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6",
+    "mkdirp": "^0.5.1",
+    "popper": "^1.0.1"
+  }
+}

@@ -1,0 +1,44 @@
+.rodape{
+
+    background: lighten($main-color, 30); //30
+    color: darken($main-color, 40); //20
+    padding: 1em 0;    //1
+    
+    svg{ /*tamanho do icones redes-socias no rodape*/
+        width: 32px; //22
+        height: 32px;
+    }
+    
+    .color-icon{
+        fill: darken($main-color, 10);
+        transition: fill .9s; //.5 transicao de cor dos icones
+        
+        &:hover{
+            fill: darken($main-color, 30);
+        }
+    }
+    
+    ul{
+        overflow: auto;
+        padding: 0;
+        width: 100%; //100
+        li{
+            width: 20%;
+            float: center; //right
+            box-sizing: border-box;
+            list-style: none;
+            padding: 0;
+        }
+
+        li a{
+            font-size: 1.5em;
+            color: inherit;
+            display: block;
+            text-align: right; //right;
+        }
+        
+        img{
+            height: 32px; //22
+        }
+    }    
+}

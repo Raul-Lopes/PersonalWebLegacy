@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- PAGE settings -->
+    <link rel="icon" href="imagens/rl.ico">
+
+    <title>Raul Lopes</title>
+    <meta name="author" content="Pingendo">
+
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="components/wowjs/css/libs/animate.css">
+
+</head>
+
+<body>
+
+    <header>
+        @@include('./inc/nav.html')
+
+        <!-- I M A G E   C A R O U S E L -->
+        <div id="carouselImages" class="carousel slide __myCarousel" data-ride="carousel">
+
+            <!--ol class="carousel-indicators">
+<li data-target="#carouselImages" data-slide-to="0" class="active"></li>
+<li data-target="#carouselImages" data-slide-to="1"></li>
+<li data-target="#carouselImages" data-slide-to="2"></li>
+</ol-->
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+
+                    <img src="imagens/slide-01.jpg" alt="Thumb" class="img-fluid d-block">
+
+                    <div class="carousel-caption text-white">
+
+                        <h3>Hi! I'm a web system engineer</h3>
+                        <p class="__lead">
+                            "With a couple of years experience building software.<br>
+                            I&#39m an active learner with a passion for technology."<br>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="imagens/slide-02.jpg" alt="Thumb" class="img-fluid d-block">
+
+                    <div class="carousel-caption  text-white">
+
+                        <h3>Hi! I am a programmer</h3>
+                        <p class="__lead">
+                            "With a couple of years experience building software.<br>
+                            I&#39m an active learner with a passion for technology."<br>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                    <img src="imagens/slide-03.jpg" alt="Thumb" class="img-fluid d-block">
+
+                    <div class="carousel-caption  text-white">
+
+                        <h3>Hi! I am a programmer</h3>
+                        <p class="__lead">
+                            "With a couple of years experience building software.<br>
+                            I&#39m an active learner with a passion for technology."<br>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MOVE BOTTUNS -->
+            <a class="carousel-control-prev" href="#carouselImages" role="button" data-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">previous</span>
+
+            </a>
+            <a class="carousel-control-next" href="#carouselImages" role="button" data-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">next</span>
+
+            </a>
+
+        </div> <!-- Fim do carousel -->
+
+
+    </header>
+
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-1">
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="itens">
+                    <div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
+                        <i class="fa fa-cogs"></i>
+                    </div>
+
+                    <div class="icone-codigo wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
+                        <i class="fa fa-code"></i>
+                    </div>
+
+                    <div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
+                        <img class="img-fluid rounded-circle p-1" src="imagens/I.jpg" alt="Thumb">
+                    </div>
+
+                    <div class="icone-coracao wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
+                        <i class="fa fa-heart"></i>
+                    </div>
+
+                    <div class="icone-compartilhar wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
+                        <i class="fa fa-share-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="textos">
+
+                    <p>
+                        "<strong>I'm an aspiring coder/developer</strong> who loves everything about Java and related
+                        technologies.
+                        I am excited to bring my life experience to the process of developing fantastic applications and
+                        websites. "
+                    </p>
+                    <p>
+                        "I've worked with a couple technologies, but I'm always interested in expanding my skills, so I
+                        spend my time studying the new technologies that come up."
+                    </p>
+
+
+                    <a href="moreAbout.html" class="botao medio"><i class="fa fa-eye"></i> More </a>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+
+                    <div class="col-12 mb-1">
+                        <hr>
+                    </div>
+
+                    <div class="row">
+                        <!-- CARD SKILLS -->
+
+                        @@loop('./inc/card-skills.html', [
+                        {
+                        "imagem": "imagens/skills/java.jpg",
+                        "texto": "Java Plataform",
+                        "alt": "Java Plataform"
+                        },
+                        {
+                        "imagem": "imagens/skills/springframework.jpg",
+                        "texto": "Spring Framework",
+                        "alt": "Spring Framework"
+                        },
+                        {
+                        "imagem": "imagens/skills/junit.jpg",
+                        "texto": "JUnit",
+                        "alt": "JUnit"
+                        },
+                        {
+                        "imagem": "imagens/skills/jpa-hibernate.jpg",
+                        "texto": "Hibernate",
+                        "alt": "Hibernate"
+                        },
+                        {
+                        "imagem": "imagens/skills/github.jpg",
+                        "texto": "Github",
+                        "alt": "Github"
+                        },
+                        {
+                        "imagem": "imagens/skills/maven.jpg",
+                        "texto": "Maven",
+                        "alt": "Maven"
+                        },
+                        {
+                        "imagem": "imagens/skills/sql.jpg",
+                        "texto": "Sql",
+                        "alt": "Sql"
+                        },
+                        {
+                        "imagem": "imagens/skills/html5.jpg",
+                        "texto": "Sql",
+                        "alt": "Sql"
+                        },
+                        {
+                        "imagem": "imagens/skills/ccs3.jpg",
+                        "texto": "Sql",
+                        "alt": "Sql"
+                        },
+                        {
+                        "imagem": "imagens/skills/js.jpg",
+                        "texto": "Sql",
+                        "alt": "Sql"
+                        },
+                        {
+                        "imagem": "imagens/skills/sass.jpg",
+                        "texto": "Sql",
+                        "alt": "Sql"
+                        },
+                        {
+                        "imagem": "imagens/skills/gulp.jpg",
+                        "texto": "Sql",
+                        "alt": "Sql"
+                        }
+                        ])
+                    </div>
+
+                </div>
+            </div> <!--fim container-->
+
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-1">
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- RODAPE -->
+    @@include('./inc/footer.html')
+
+
+    <script src="javascript/app.min.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="components/jquery/dist/jquery.js"></script>
+    <script src="components/popper.js/dist/umd/popper.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- EFEITO DE ANIMACOES: Link and activate WOW.js -->
+    <script src="components/wowjs/dist/wow.min.js"></script>
+    <script>
+
+        $(function () {
+            $('.toggle').click(function () {
+                $('.layout').toggleClass('ativo');
+                $('.menu-responsivo').toggleClass('ativo');
+                $(this).toggleClass('ativo');
+            });
+            new WOW().init();
+        });        
+    </script>
+
+</body>
+
+</html>

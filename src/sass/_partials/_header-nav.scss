@@ -1,0 +1,129 @@
+.js.menu-opened{
+    overflow: hidden;
+    &:after{
+        content: "";
+        display: block;
+        position: fixed;
+        top: 70px; //50
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        background: rgba(0,0,0,.5);
+    }
+}
+
+.header-nav{ //laptop
+    
+    $h: 70px; //50 espessura do menu no Laptop
+    $breakpoint: 680px;
+    
+    background-color: lighten($main-color, 10%);
+    
+    .js &{
+        height: $h;
+                
+        .container{
+            height: 100%;
+        }
+    }
+    
+    &__logo{ //Logomarca RL
+        display: inline-block;
+        max-width:350px;
+        height: $h;
+        position: relative;
+        top: 8px;
+        z-index: 20;
+        //text-align: left;
+        img{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+    
+    &__hamburgger{
+        display: none;
+        
+        .js &{
+            display: inline-block;
+            float: right;
+            height: 100%;
+            border: none;
+            background: transparent;
+            color: white;
+            font-size: 2em;
+            padding: 0 .5em;
+            
+            &:hover, &:focus{
+                background: lighten($main-color, 5%);
+            }
+            
+            @media screen and (min-width: #{$breakpoint}){
+                display: none;
+            }
+        }
+    }
+    
+    &__menu{ //laptop
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        a{
+            color: white;
+            display: block;
+            font-size: 1em; //1.5em; muda o tamanho do menu
+            border-top: 1px solid darken($main-color, 5%); //set a cor do menu
+            padding: 1em; //1em
+            
+            &:hover{ //animacao do menu quando passa o mouse
+                background: darken($main-color, 3%);
+            }
+        }
+        
+        .js &{
+            @media screen and (max-width: #{$breakpoint}){
+                background: darken($main-color, 10);
+                position: fixed;
+                z-index: 10;
+                top: $h;
+                left: -100%;
+                width: 80%;
+                bottom: 0;
+                transition: left .3s ease-out;
+            }            
+            
+        }
+        
+        .menu-opened &{
+            display: block;
+            
+            @media screen and (max-width: #{$breakpoint}){
+                left: 0;
+            }
+        }
+        
+        @media screen and (min-width: #{$breakpoint}){
+            
+            display: inline-block;
+            float: right;
+            height: $h;
+
+            li{
+                display: inline-block;
+                
+                a{
+                    border-top: none;
+                    transition: all .3s ease-in-out;
+                    padding: 15px;
+                    
+                    &:hover{
+                        transform: translateY(.5em);
+                        box-shadow: 0 5px 15px -10px black;
+                    }
+                }
+            }
+        }
+    }
+}
